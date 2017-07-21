@@ -50,6 +50,7 @@
 
     function nextVideo() {
         videojsPlayer.playlist.next() || videojsPlayer.playlist.first();
+        playPauseButton.className = '';
     };
 
     function prevVideo() {
@@ -59,6 +60,7 @@
         }
 
         videojsPlayer.playlist.previous() || videojsPlayer.playlist.last();
+        playPauseButton.className = '';
     };
 
     function initVideojs() {
