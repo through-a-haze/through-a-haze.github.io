@@ -3,6 +3,8 @@
 (function createPlayer() {
     var playerWrapper = document.getElementsByTagName('gold-player')[0];
 
+    if (!playerWrapper) return;
+
     var videojsOptions = {
         controls: false,
         autoplay: true,
@@ -132,6 +134,7 @@
                     cb(JSON.parse(xhr.responseText));
                 } else {
                     console.error(xhr.statusText);
+                    alert('GoldPlayer can\'t get the data from: ' + fileName + '\nThe reason is: ' + xhr.statusText);
                 }
             }
         };
@@ -182,7 +185,7 @@
 
         for (var i = 0; i < data.length; i++) {
             person = makePerson();
-            person.fullName = data[i].repFirstName + ' ' + data[i].repLastName;
+            person.fullName = data[i].repFirstName + ' ' + data[i].repLastName + ',';
             person.managerName = data[i].repManager;
 
             people.push(person);
