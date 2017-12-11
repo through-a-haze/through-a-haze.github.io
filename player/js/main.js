@@ -10,6 +10,7 @@
         controls: false,
         autoplay: false,
         preload: 'auto',
+        playsinline: true,
         width: 234,
         height: 176
     };
