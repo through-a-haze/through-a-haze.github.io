@@ -1,13 +1,14 @@
 'use strict';
 
 (function createPlayer() {
+
     var playerWrapper = document.getElementsByTagName('gold-player')[0];
 
     if (!playerWrapper) return;
 
     var videojsOptions = {
         controls: false,
-        autoplay: true,
+        autoplay: false,
         preload: 'auto',
         width: 234,
         height: 176
@@ -50,6 +51,8 @@
 
     function nextVideo() {
         videojsPlayer.playlist.next() || videojsPlayer.playlist.first();
+        if (!videojsOptions.autoplay) playPause.call(playPauseButton);
+        
         playPauseButton.className = '';
     };
 
@@ -60,6 +63,8 @@
         }
 
         videojsPlayer.playlist.previous() || videojsPlayer.playlist.last();
+        if (!videojsOptions.autoplay) playPause.call(playPauseButton);
+        
         playPauseButton.className = '';
     };
 
@@ -81,6 +86,11 @@
         playerWrapper.appendChild(playPauseButton);
         playerWrapper.appendChild(nextButton);
         playerWrapper.appendChild(muteButton);
+        
+        if (!videojsOptions.autoplay) {
+            playerWrapper.appendChild(createStartLayer());
+            playPauseButton.className = 'paused';
+        }
 
         videojsPlayer = initVideojs();
         setPlaylist(playlist);
@@ -92,6 +102,17 @@
         element.className = 'video-js';
 
         return element;
+    };
+
+    function createStartLayer() {
+        var startLayer = document.createElement('div');
+        startLayer.id = 'videojs-startlayer';
+        startLayer.onclick = function() {
+            this.remove();
+            playPause.call(playPauseButton);
+        };
+
+        return startLayer;
     };
 
     function createButton(btn, onclickEvent) {
@@ -142,7 +163,11 @@
         };
 
         xhr.onerror = function(e) {
+            var offlineData = window.offlineData || [];
+
             console.error(xhr.statusText);
+
+            cb(offlineData);
         };
 
         xhr.send(null);
