@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>VideoPlayer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="gold-player.css" rel="stylesheet"> <!-- here is the CSS file -->
+</head>
+
+<body>
+    <gold-player data-from="https://s3.us-east-2.amazonaws.com/dev-customerway/Story/test_list_2.json"></gold-player> <!-- this is a sample of the tag of the video player -->
+
+    <script src="gold-player.js"></script> <!-- here is the JS file -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49796913-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-49796913-2');
+    </script>
+</body>
+
+</html>
