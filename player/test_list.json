@@ -1,8 +1,8 @@
 [
     {
-        "repFirstName": "Jennifer",
-        "repLastName": "Gervais",
-        "repManager": "Raylene",
+        "repFirstName": "",
+        "repLastName": "",
+        "repManager": "",
         "video": "https://www.w3schools.com/tags/movie.mp4"
     },
     {
@@ -12,9 +12,6 @@
         "video": "https://vjs.zencdn.net/v/oceans.mp4"
     },
     {
-        "repFirstName": "Dan",
-        "repLastName": "Davis",
-        "repManager": "Olivia",
         "video": "https://www.w3schools.com/tags/mov_bbb.mp4"
     },
     {
