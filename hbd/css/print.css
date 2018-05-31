@@ -1,0 +1,7 @@
+@media print {
+    .a4-container {
+        background: transparent;
+        padding: 0;
+        -webkit-print-color-adjust: exact;
+    }
+}
