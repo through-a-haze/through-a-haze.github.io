@@ -20,10 +20,6 @@ body {
     position: relative;
 }
 
-.container > div {
-    margin: 5px 0;
-}
-
 #audioPlayer {
     position: absolute;
     left: 0;
