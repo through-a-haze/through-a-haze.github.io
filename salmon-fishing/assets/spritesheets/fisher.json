@@ -1,0 +1,87 @@
+{
+  "frames": {
+    "StartTrans.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 968,
+        "h": 752
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 55,
+        "y": 37,
+        "w": 968,
+        "h": 752
+      },
+      "sourceSize": {
+        "w": 1049,
+        "h": 837
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "Manager_StartWithFishingLine.png": {
+      "frame": {
+        "x": 968,
+        "y": 0,
+        "w": 548,
+        "h": 255
+      },
+      "rotated": false,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 6,
+        "y": 23,
+        "w": 548,
+        "h": 255
+      },
+      "sourceSize": {
+        "w": 564,
+        "h": 278
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "StartTransWithFishingLine.png": {
+      "frame": {
+        "x": 1516,
+        "y": 0,
+        "w": 547,
+        "h": 242
+      },
+      "rotated": true,
+      "trimmed": true,
+      "spriteSourceSize": {
+        "x": 6,
+        "y": 22,
+        "w": 547,
+        "h": 242
+      },
+      "sourceSize": {
+        "w": 567,
+        "h": 284
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.5",
+    "image": "fisher.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1758,
+      "h": 752
+    },
+    "scale": 1
+  }
+}

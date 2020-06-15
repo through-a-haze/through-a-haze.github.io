@@ -1,0 +1,44 @@
+{"frames": {
+
+"Bubble_GPBallot.png":
+{
+	"frame": {"x":1,"y":1,"w":370,"h":274},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":7,"w":370,"h":274},
+	"sourceSize": {"w":390,"h":290}
+},
+"Bubble_Lose.png":
+{
+	"frame": {"x":708,"y":1,"w":324,"h":274},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":56,"y":7,"w":324,"h":274},
+	"sourceSize": {"w":390,"h":290}
+},
+"Bubble_Start.png":
+{
+	"frame": {"x":1034,"y":1,"w":324,"h":274},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":56,"y":7,"w":324,"h":274},
+	"sourceSize": {"w":390,"h":290}
+},
+"Bubble_Win.png":
+{
+	"frame": {"x":373,"y":1,"w":333,"h":274},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":52,"y":7,"w":333,"h":274},
+	"sourceSize": {"w":390,"h":290}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "text-bubbles.png",
+	"format": "RGBA8888",
+	"size": {"w":1359,"h":276},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:9c87674cb2687eb978218d992e0c3a3b:a3bac5fd609c29cd5223f99a34e228a7:02ab132358d6d8b512e80119463a8329$"
+}
+}
